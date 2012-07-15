@@ -7,7 +7,7 @@ Some links and docs related to Josh Bloom's SciPy2012 Keynote (20 July 2012)
 
 ### Docs in the Repo ###
 
-   * **doscience.py**: cheeky psuedocode showing how to do groundbreaking science with Python.  __Excercise__ for home: try to make this object oriented and account for vast numbers of PI committee meetings.
+   * **doscience.py**: cheeky psuedocode showing how to do groundbreaking science with Python.  __Excercise__ (only try this at home): try to make this object oriented and account for vast number of PI committee meetings.
    
    * **talk slides**: TBD
         

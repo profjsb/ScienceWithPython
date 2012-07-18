@@ -3,7 +3,7 @@ try:
     from PriorExperience import insight,serendipity
     my_new_idea = gen_ideas(insight,serendipity,NewTechnology)
 except:
-    my_new_idea = somebody_elses_idea
+    my_new_idea = copy.copy(somebody_elses_idea)
 
 ## get funding and build a team
 funded = False
@@ -15,7 +15,8 @@ from multiprocessing import Pool
 grads = Pool(5) ; postdocs = Pool(3) ; undergrads = Pool(8)
 
 ## do the work and write it up
-paper = get_data(grads,postdocs,undergrads,proposal.cash).write_paper()
+results = get_data(grads,postdocs,undergrads,proposal.cash).findresult()
+paper   = results.write_paper()
 paper.submit(journal="Science") # this will be accepted without revision
 
 ## reap rewards
